@@ -22,14 +22,17 @@ Here we are going to deploy our application in our kubernetes cluster.
         kubectl get nodes
         kubectl cluster-info
     Now the Kubernetes cluster is created.
+   
+*Application Development to Image push in the Docker Hub we already did. Kindly check how to do that from the below reference.
+https://github.com/RajashekarDandamudi/Spring_boot_application.git
 
-2. Pull the Image to Master node.
+3. Pull the Image to Master node.
     Install Docker on Master
         sudo apt install -y docker.io
         docker login <user_name> <Password>
         docker pull <image_name:latest>
 
-3. Write Deployment,service file and Deploy the Application.
+4. Write Deployment,service file and Deploy the Application.
     sudo vi deployment.yml
     sudo vi service.yml
 
